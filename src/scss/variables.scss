@@ -1,0 +1,27 @@
+$font-size:                   16px;
+
+$screen-xs:                   480px;
+$screen-sm:                   768px;
+$screen-md:                   992px;
+$screen-lg:                   1200px;
+$screen-xl:                   1920px;
+
+@mixin _xs {
+    @media only screen and (max-width: $screen-xs) {@content}
+}
+
+@mixin _sm {
+    @media only screen and (max-width: $screen-sm) {@content}
+}
+
+@mixin _md {
+    @media only screen and (max-width: $screen-md) {@content}
+}
+
+@mixin _lg {
+    @media only screen and (max-width: $screen-lg) {@content}
+}
+
+@mixin _xl {
+    @media only screen and (max-width: $screen-xl) {@content}
+}
