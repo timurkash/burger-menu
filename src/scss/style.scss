@@ -9,11 +9,11 @@
 
 /* Основные стили */
 
-@include _sm {
-	body.lock{
-		overflow: hidden;
-  }
-}
+// @include _sm {
+// 	body.lock{
+// 		overflow: hidden;
+//   }
+// }
 
 .container{
 	max-width: 1000px;
@@ -43,6 +43,7 @@
     justify-content: space-between;
     height: 80px;
     align-items: center;
+    margin: 0 20px;
   }
   &__logo {
     flex: 0 0 60px;
@@ -88,7 +89,7 @@
       display: block;
       position: relative;
       width: 30px;
-      height: 20px;
+      height: 21px;
       position: relative;
       z-index: 3;
       span{
@@ -112,7 +113,7 @@
         transition: all 0.3s ease 0s;
       }
       &:before{
-        top: 0;
+        top: 0px;
       }
       &:after{
         bottom: 0;
@@ -132,8 +133,8 @@
   
     &__menu {
       position: fixed;
-      top: -100%;
-      right: 0;
+      top: 0;
+      right: -200px;
       // width: 50%;
       min-width: 200px;
       overflow: auto;
@@ -144,7 +145,7 @@
       border-bottom-left-radius: 20px;
       border: 1px solid #ccc;
       &.active{
-        top: 0;
+        right: 0;
       }
     }
     &__list {
